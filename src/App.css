@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  display: flex;
+}
+
+.navbar header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header .company-name, .navigations .navigation {
+  color: rgb(100, 100, 100);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.company-name {
+  margin: 0 10px;
+}
+
+.nav-container {
+  display: flex;
+  margin: 0 10px;
+}
+
+.navigations .navigation {
+  margin: 0 7px;
+  padding: 15px 0 15px 0;
+}
+
+.navigations .active {
+  color: gold;
+  border-bottom: 2px solid;
+}
+
+/* Shop page */
+.shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+
+.shop .products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Card Product Component */
+.card-product {
+  background-color: white;
+  width: 170px;
+  height: 340px;
+  margin: 4px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-product .card-image {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-product .product-details {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 10px 10px;
+  width: 90%;
+}
+
+.card-product .product-model {
+  color: rgb(60, 60, 60);
+  margin: 0 0 0 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card-product .product-brand {
+  color: rgb(100, 100, 100);
+  margin: 0 0 0 5px;
+}
+
+.card-product .product-price {
+  color: lightseagreen;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-product .addToCart-btn {
+  background: none;
+  border: 1px solid lightseagreen;
+  border-radius: 10px;
+  color: lightseagreen;
+  cursor: pointer;
+  margin-bottom: 15px;
+  padding: 7px;
+  text-transform: capitalize;
+  transition: .2s;
+  width: 85%;
+}
+
+.addToCart-btn:hover {
+  opacity: .7;
+}
+
+.addToCart-btn:active {
+  background-color: lightseagreen;
+  color: white;
+  opacity: .8;
+  transform: translateY(2px);
+}
+
+/* Cart page */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4px;
+  width: 100%;
+}
+
+/* Cart Item component */
+.cart-item {
+  width: 350px;
+  height: 150px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, .4);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin: 4px;
+
+}
+
+.item-image {
+  width: 130px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.item-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  object-fit: cover;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.item-model {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(70, 70, 70);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.item-brand {
+  font-size: 12px;
+  color: rgb(120, 120, 120);
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.item-price {
+  color: darkcyan;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 85%;
+}
+
+.quantity-value {
+  color: rgb(100, 100, 100);
+}
+
+.btn-increase, .btn-decrease {
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.placeOrder-btn {
+  cursor: pointer;
+  color: whitesmoke;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  text-transform: capitalize;
+  background: darkcyan;
+}
+
+.btn-increase:active, 
+.btn-decrease:active, 
+.placeOrder-btn:active {
+  transform: translateY(2px);
+}
