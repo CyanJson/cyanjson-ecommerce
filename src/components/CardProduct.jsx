@@ -1,5 +1,13 @@
+import { useState } from "react"
 
 const CardProduct = ({image, brand, model, price, addToCart}) => {
+    const [added, setAdded] = useState(false);
+
+    const handleClick = () => {
+        addToCart();
+        setAdded(true);
+    }
+
     return (
         <div className="card-product">
             <div className="card-image">
@@ -10,7 +18,13 @@ const CardProduct = ({image, brand, model, price, addToCart}) => {
                 <p className="product-brand">{brand}</p>
                 <span className="product-price">${price}</span>
             </div>
-            <button className="addToCart-btn" onClick={addToCart}>add to cart</button>
+            <button 
+                className={added ? "addedToCart-btn" : "addToCart-btn"}
+                disabled={added} 
+                onClick={handleClick}
+            >
+                {added ? 'added' : 'add to cart'}
+            </button>
         </div>
     )
 }

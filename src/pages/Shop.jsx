@@ -23,17 +23,18 @@ const Shop = () => {
         console.log(productsInCart);
     }, [productsInCart]);
 
+
     return (
         <div className="shop">
             <div className="products">
-                {products.map((product) => (
+                {products.map((item) => (
                     <CardProduct
-                        key={product.id}
-                        image={product.image}
-                        brand={product.brand}
-                        model={product.model}
-                        price={product.price}
-                        addToCart={() => handleAddToCart(product)}
+                        key={item.id}
+                        image={item.image}
+                        brand={item.brand}
+                        model={item.model}
+                        price={item.price}
+                        addToCart={() => handleAddToCart(item)}
                     />
                 ))}
             </div> 

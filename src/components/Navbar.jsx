@@ -3,12 +3,11 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
     const [selectedIndex, setSelectedIndex] = useState(-1);
+
     const nav = [
         {name: "Shop", link: "/shop"}, 
         {name: "Cart", link: "/cart"}
     ];
-
-  console.log(selectedIndex);
 
     return (
         <div className="navbar">
