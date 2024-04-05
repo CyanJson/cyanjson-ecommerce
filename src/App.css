@@ -157,6 +157,12 @@ header .company-name, .navigations .navigation {
   width: 100%;
 }
 
+.cart-items .no-items {
+  color: rgb(100, 100, 100);
+  position: absolute;
+  top: 50%;
+}
+
 /* Cart Item component */
 .cart-item {
   width: 350px;

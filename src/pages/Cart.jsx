@@ -6,15 +6,19 @@ const Cart = () => {
 
     return (
         <div className="cart-items">
-            {productsInCart.map((item) => (
-                <CartItem
-                    key={item.id}
-                    image={item.image}
-                    brand={item.brand}
-                    model={item.model}
-                    price={item.price}
-                />
-            ))}
+            {productsInCart.length === 0 ?
+                <div className="no-items">No items</div>
+                :
+                productsInCart.map((item) => (
+                    <CartItem
+                        key={item.id}
+                        image={item.image}
+                        brand={item.brand}
+                        model={item.model}
+                        price={item.price}
+                    />
+                ))
+            }
         </div>
     )
 }

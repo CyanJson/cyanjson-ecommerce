@@ -14,15 +14,12 @@ const Shop = () => {
         setProducts(json);
     }
 
-    const handleAddToCart = (product) => {
-        dispatch(addToCart(product));
-    }
+    const handleAddToCart = (product) => dispatch(addToCart(product));
 
     useEffect(() => {
         getProducts();
         console.log(productsInCart);
     }, [productsInCart]);
-
 
     return (
         <div className="shop">
