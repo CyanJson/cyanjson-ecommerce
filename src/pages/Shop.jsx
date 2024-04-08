@@ -18,7 +18,6 @@ const Shop = () => {
 
     useEffect(() => {
         getProducts();
-        console.log(productsInCart);
     }, [productsInCart]);
 
     return (

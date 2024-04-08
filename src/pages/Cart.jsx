@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux"
 import { removeFromCart } from "../redux/cartSlice"
 import CartItem from "../components/CartItem"
@@ -8,9 +9,11 @@ const Cart = () => {
 
     const handleRemove = (id) => {
         dispatch(removeFromCart(id));
-        console.log(id);
-        console.log(productsInCart);
     };
+
+    useEffect(() => {
+        console.log(productsInCart);
+    }, [productsInCart]);
 
     return (
         <div className="cart-items">
