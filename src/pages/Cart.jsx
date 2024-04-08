@@ -1,8 +1,16 @@
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
+import { removeFromCart } from "../redux/cartSlice"
 import CartItem from "../components/CartItem"
 
 const Cart = () => {
     const productsInCart = useSelector((state) => state.cart);
+    const dispatch = useDispatch();
+
+    const handleRemove = (id) => {
+        dispatch(removeFromCart(id));
+        console.log(id);
+        console.log(productsInCart);
+    };
 
     return (
         <div className="cart-items">
@@ -16,6 +24,7 @@ const Cart = () => {
                         brand={item.brand}
                         model={item.model}
                         price={item.price}
+                        onRemove={() => handleRemove(item.id)}
                     />
                 ))
             }

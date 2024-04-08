@@ -164,6 +164,10 @@ header .company-name, .navigations .navigation {
 }
 
 /* Cart Item component */
+.cart-item-component {
+  position: relative;
+}
+
 .cart-item {
   width: 350px;
   height: 150px;
@@ -174,6 +178,32 @@ header .company-name, .navigations .navigation {
   align-items: center;
   justify-content: space-between;
   margin: 10px;
+}
+
+.remove-item {
+  position: absolute;
+  top: 8%;
+  right: 4%;
+}
+
+.remove-item .remove-btn {
+  border: none;
+  border-radius: 50%;
+  color: rgb(100, 100, 100);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.remove-btn:hover {
+  opacity: .7;
+}
+
+.remove-btn:active {
+  opacity: .5;
 }
 
 .item-image {
