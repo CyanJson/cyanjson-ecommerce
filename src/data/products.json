@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/air-max-270-shoes-2V5C4p.png",
+        "imageUrl": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/air-max-270-shoes-2V5C4p.png",
         "brand": "Nike",
         "model": "Air Max 270",
         "price": 120.00,
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e37cd44ce78c42d4b6a8ac5300ae42fd_9366/Ultraboost_21_Shoes_White_FY0846_01_standard.jpg",
+        "imageUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e37cd44ce78c42d4b6a8ac5300ae42fd_9366/Ultraboost_21_Shoes_White_FY0846_01_standard.jpg",
         "brand": "Adidas",
         "model": "Ultraboost 21",
         "price": 180.00,
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "image": "https://www.tradeinn.com/f/13735/137359453/puma-rs-x3-super-trainers.jpg",
+        "imageUrl": "https://www.tradeinn.com/f/13735/137359453/puma-rs-x3-super-trainers.jpg",
         "brand": "Puma",
         "model": "RS-X³ Super",
         "price": 100.00,
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "image": "https://i.ebayimg.com/images/g/Eu0AAOSwH7NlKRhM/s-l1200.jpg",
+        "imageUrl": "https://i.ebayimg.com/images/g/Eu0AAOSwH7NlKRhM/s-l1200.jpg",
         "brand": "New Balance",
         "model": "Fresh Foam Roav",
         "price": 90.00,
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "image": "https://images.tcdn.com.br/img/img_prod/1009791/reebok_nano_x1_especial_para_membros_color_835_1_a6d21eb4899765e014d4240cdfa2654e.jpg",
+        "imageUrl": "https://images.tcdn.com.br/img/img_prod/1009791/reebok_nano_x1_especial_para_membros_color_835_1_a6d21eb4899765e014d4240cdfa2654e.jpg",
         "brand": "Reebok",
         "model": "Nano X1",
         "price": 130.00,
@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "image": "https://www.hoojan.com/media/catalog/product/cache/4/image/600x600/9df78eab33525d08d6e5fb8d27136e95/c/h/chaussures_de_running_rouge_under_armour_ua_hovr_phantom_2_4.jpg",
+        "imageUrl": "https://www.hoojan.com/media/catalog/product/cache/4/image/600x600/9df78eab33525d08d6e5fb8d27136e95/c/h/chaussures_de_running_rouge_under_armour_ua_hovr_phantom_2_4.jpg",
         "brand": "Under Armour",
         "model": "UA HOVR Phantom 2",
         "price": 140.00,
@@ -49,7 +49,7 @@
     },
     {
         "id": 7,
-        "image": "https://www.swag-kicks.com/cdn/shop/products/IMG_9807_20copy_62c1d35b-fe20-4482-9904-0b029644949e.jpg?v=1698145133",
+        "imageUrl": "https://www.swag-kicks.com/cdn/shop/products/IMG_9807_20copy_62c1d35b-fe20-4482-9904-0b029644949e.jpg?v=1698145133",
         "brand": "Brooks",
         "model": "Ghost 13",
         "price": 130.00,
@@ -57,7 +57,7 @@
     },
     {
         "id": 8,
-        "image": "https://www.theathletesfoot.co.nz/media/catalog/product/cache/ec8945dbe7a391c1e946b836b9ec023c/1/0/1011b189_001_01.jpg",
+        "imageUrl": "https://www.theathletesfoot.co.nz/media/catalog/product/cache/ec8945dbe7a391c1e946b836b9ec023c/1/0/1011b189_001_01.jpg",
         "brand": "ASICS",
         "model": "GEL-Kayano 28",
         "price": 160.00,
@@ -65,7 +65,7 @@
     },
     {
         "id": 9,
-        "image": "https://www.salomon.com/en-gb/shop-emea/media/catalog/product/article_images/L41609500/L41609500_11805c9ff02f4046f41bee1db0d8bb13.png?auto=webp&bg-color=f5f5f5&dpr=1.25&fit=cover&format=pjpg&optimize=low&orient=1&pad=72%2C35%2C73%2C35&width=305",
+        "imageUrl": "https://www.salomon.com/en-gb/shop-emea/media/catalog/product/article_images/L41609500/L41609500_11805c9ff02f4046f41bee1db0d8bb13.png?auto=webp&bg-color=f5f5f5&dpr=1.25&fit=cover&format=pjpg&optimize=low&orient=1&pad=72%2C35%2C73%2C35&width=305",
         "brand": "Salomon",
         "model": "Speedcross 5",
         "price": 130.00,
@@ -73,7 +73,7 @@
     },
     {
         "id": 10,
-        "image": "https://running-form.co.uk/cdn/shop/products/Mizuno-Wave-Rider-25-Women_s-Blue-IndigoWhite-Diva-Pink_1024x1024.jpg?v=1645196479",
+        "imageUrl": "https://running-form.co.uk/cdn/shop/products/Mizuno-Wave-Rider-25-Women_s-Blue-IndigoWhite-Diva-Pink_1024x1024.jpg?v=1645196479",
         "brand": "Mizuno",
         "model": "Wave Rider 25",
         "price": 140.00,

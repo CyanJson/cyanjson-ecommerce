@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const CardProduct = ({image, brand, model, price, addToCart}) => {
+const CardProduct = ({imageUrl, brand, model, price, addToCart}) => {
     const [added, setAdded] = useState(false);
 
     const handleClick = () => {
@@ -11,7 +11,7 @@ const CardProduct = ({image, brand, model, price, addToCart}) => {
     return (
         <div className="card-product">
             <div className="card-image">
-                <img src={image} alt="img"></img>
+                <img src={imageUrl} alt="img"></img>
             </div>
             <div className="product-details">
                 <p className="product-model">{model}</p>

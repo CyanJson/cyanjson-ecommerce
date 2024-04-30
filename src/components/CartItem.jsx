@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CartItem = ({image, brand, model, price, onRemove}) => {
+const CartItem = ({imageUrl, brand, model, price, onRemove}) => {
     const [quantity, setQuantity] = useState(1);
 
     const increase = () => setQuantity(quantity + 1);
@@ -12,7 +12,7 @@ const CartItem = ({image, brand, model, price, onRemove}) => {
         <div className="cart-item-component">
             <div className="cart-item">
                 <div className="item-image">
-                    <img src={image} alt="img"></img>
+                    <img src={imageUrl} alt="img"></img>
                 </div>
                 <div className="item-details">
                     <p className="item-model">{model}</p>

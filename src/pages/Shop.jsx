@@ -9,7 +9,8 @@ const Shop = () => {
     const dispatch = useDispatch();
 
     const getProducts = async () => {
-        const response = await fetch('src/data/products.json');
+        // fetch request from MySQl Database 
+        const response = await fetch('http://localhost:3000/cyanjson-ecommerce/products');
         const json = await response.json();
         setProducts(json);
     }
@@ -26,7 +27,7 @@ const Shop = () => {
                 {products.map((item) => (
                     <CardProduct
                         key={item.id}
-                        image={item.image}
+                        imageUrl={item.imageUrl}
                         brand={item.brand}
                         model={item.model}
                         price={item.price}
